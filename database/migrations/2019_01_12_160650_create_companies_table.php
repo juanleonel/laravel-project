@@ -19,8 +19,8 @@ class CreateCompaniesTable extends Migration
             $table->string('mission',128);
             $table->mediumText('description_view',128);
             $table->mediumText('description_mission',128);
-            $table->string('image_view');
-            $table->string('image_mission');
+            $table->string('image_view')->nullable();
+            $table->string('image_mission')->nullable();
             $table->string('email',128)->unique();
             $table->string('link_facebook');
             $table->timestamps();
